@@ -146,11 +146,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 0 20px;
 }
+
 .cards {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: auto;
   width: 400px;
   height: 400px;
   perspective: 1000px;
@@ -279,7 +278,30 @@ a {
   font-size: 0.9em;
   color: #444;
 }
-@media only screen and (max-device-width: 1200px){
+
+@media screen and (max-width: 1200px) {
+  #header-img {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+  #nav-bar {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+  .nav-link {
+    font-size: 1em; 
+    padding: 15px 6vw;
+  }
+  #card-container {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-device-width: 1200px) {
   #header-img {
     height: 50%;
     width: 50%;
