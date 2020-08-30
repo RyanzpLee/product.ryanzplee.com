@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Piano Product Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+  <main>
+    <header id="header">
+      <img id="header-img" src="https://steinway.co.uk/wp-content/themes/steinway/assets/img/logo.svg">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#About">About</a>
+        <a class="nav-link" href="#Pianos">Pianos</a>
+        <a class="nav-link"  href="#Contact">Contact</a>
+        <a class="nav-link" href="#Social">Socials</a>
+      </nav>
+    </header>
+    
+    <div class="parallax">
+      <h1 id="welcome">Welcome to</br> Steinway & Sons</h1>
+      <p id="subheading"> A true masterpiece of craftsmanship</p>
+    </div>
+    
+    <div id="About">
+      <h2 id="About-title">Steinway & Sons</h2>
+      <p>Steinway & Sons was founded by master craftsmen, trained in the best European tradition. We built our pianos then as we do now, one at a time, applying skills that were handed down from master to apprentice, from generation to generation.
+      </p>
+      </br>
+      <p>
+Each Steinway grand piano takes nearly a year to create. Nothing is hurried. The carefully selected woods employed in the rims, tops, soundboards and actions cure for months in our yard kilns and conditioning rooms until they stabilise at our rigidly specified moisture content.</p>
+      <div id="video-container">
+        <iframe
+          id="video"
+          width="640"
+          height="480"               src="https://www.youtube.com/embed/jAInt7hIZlU?controls=1"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  <div class="parallax2"></div>
+  
+    <div id="Pianos">
+      <h2>
+        Explore our pianos
+      </h2>
+      <p>Our wonderful grand pianos produce a rich and refined sound. The <strong> STEINWAY GRAND </strong> represents over 100 years of dedicated craftmanship and passion</p>
+      
+    </div>
+
+    <div id="card-container">
+      
+<!--card1 -->
+      <a href="#" onclick="return false;">
+      <div class="cards">
+        <div class="card-inner">
+          <div class="card-front" style="background-image:url(https://steinway.co.uk/wp-content/uploads/2019/10/Boston-600x600.jpg)">
+            <span>
+              <h1>BOSTON GRANDS</h1>
+            </span>
+          </div>
+          <div class="card-back">
+            <span><h1>Performance Grand pianos</h1></span>
+          </div>
+        </div>
+      </div>
+      </a>
+<!--card2-->
+      <a href="#" onclick="return false;">
+      <div class="cards">
+        <div class="card-inner">
+          <div class="card-front" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)
+  ), url(https://steinway.co.uk/wp-content/uploads/2019/10/Model-B-600x600.jpg)">
+            <span>
+              <h1>MODEL B</h1>
+            </span>
+          </div>
+          <div class="card-back">
+            <span><h1>Classic Grand Piano</h1></span>
+          </div>
+        </div>
+      </div>
+      </a>
+<!-- card3 -->
+      <a href="#" onclick="return false;">
+      <div class="cards">
+        <div class="card-inner">
+          <div class="card-front" style="background-image:url(https://steinway.co.uk/wp-content/uploads/2019/09/Model-D-600x600.jpg)">
+            <span>
+              <h1>MODEL D</h1>
+            </span>
+          </div>
+          <div class="card-back">
+            <span><h1>Concert Grand Piano</h1></span>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+      
+
+    <div id="Contact">
+      <h2>Contact us
+      </h2>
+      <p>
+        If you're interested in learning more or you want to purchase a piano, please enter your email address below.
+      </p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label id="email-label"
+               for="email"></label>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter your email address"
+               required/>
+        <input
+               type="submit"
+               id="submit"
+               value="Submit"
+               class="button"/>
+      </form>
+    </div>
+    <footer id="Social">
+      <ul>
+        <li><a href="#" onclick="return false;">Privacy</a></li>
+        <li><a href="#" onclick="return false;">Terms</a></li>
+        <li><a href="#" onclick="return false;">Social</a></li>
+      </ul>
+      <span>Ryan ZP Lee 2020</span>
+    </footer>
+  </main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

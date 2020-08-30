@@ -1,0 +1,368 @@
+@import url('https://fonts.google.com/specimen/Lato');
+
+html {
+  font-family:"Lato", ;
+}
+
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+#header {
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(182, 179, 179, 0.9);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#header-img {
+  margin: 10px 0 10px 10px;
+  display: inline;
+  width:;
+}
+
+#nav-bar {
+  padding: 10px;
+  margin-right: 50px;
+  float: center;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+  font-size: 2em ;
+  padding: 30px 20px;
+}
+
+.nav-link:hover {
+  background: #ddd;
+  
+}
+
+.parallax {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)
+  ), url("https://images.unsplash.com/photo-1566842928202-f71ea5e991ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80");
+  height: 1500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+
+
+#welcome {
+  color: white;
+  font-weight: 700;
+  font-size: 6rem;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: center;
+}
+
+#subheading {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  float: center;
+}
+
+
+#About {
+  text-align: center;
+  margin: 0 25% 5% 25%;
+  width: flex;
+  display: block;
+}
+
+#About-title {
+  padding: 50px 0 50px 0;
+  color: black;
+  font-size: 5em;
+}
+
+#About p {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+#video {
+  width: 100%;
+}
+
+
+.parallax2 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)
+  ), url("https://assets.classicfm.com/2015/32/steinway-piano-factory-3-1439367685-view-0.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;  
+}
+
+#Pianos {
+  text-align: center;
+  margin: 0 25% 5% 25%;
+  width: flex;
+  display: block;
+}
+
+#Pianos h2 {
+  padding: 50px 0 50px 0;
+  color: black;
+  font-size: 4em;
+}
+#Pianos p {
+  font-size: 1.5em;
+  margin-bottom: 5%
+}
+
+#card-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0 20px;
+}
+.cards {
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  border: 1px solid #ffffff;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cards:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card-front {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  line-height: 400px; 
+}
+.card-front span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.card-back {
+  background-color: rgb(13, 4, 43);
+  color: white;
+  transform: rotateY(180deg);
+  line-height: 400px;
+}
+.card-back span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+#Contact {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, #000000 0%, #121212 50%, #000000 100%);
+  background-size: 100% 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white
+}
+
+#Contact h2 {
+  font-size: 2rem;
+  padding: 10px 0;
+  margin: 10px 0 10px 0;
+}
+
+#Contact p {
+  font-size: 1.5rem;
+}
+
+#form {
+  display: grid;
+  margin-top: -2em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+#email {
+  display: block;
+  width: 30%;
+  height: 2rem;
+  margin: 0 35% 0 35%;
+}
+
+#submit {
+  display: block;
+  width: 20%;
+  margin: 0 40% 0 40%;
+  background: #9b0927;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid black;
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;  
+}
+
+#Social {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#Social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+#Social li {
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+#Social a {
+  color: black;
+}
+
+#Social span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+  color: #444;
+}
+@media only screen and (max-device-width: 1200px){
+  #header-img {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+  #nav-bar {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+  }
+  .nav-link {
+    font-size: 1em; 
+    padding: 15px 6vw;
+  }
+  .parallax {
+    background-attachment: ;
+    height: 100vh;
+  }
+
+  #welcome {
+    font-size: 3em;
+  }
+  #About {
+  text-align: center;
+  margin: 0 10% 5% 10%;
+  }
+  #About-title {
+    font-size: 2em;
+  }
+  #About p {
+    font-size: 1em;
+  }
+  .parallax2 {
+    height: 50vh;
+    background-size: auto;
+  }
+  #Pianos {
+    margin: 0 10% 5% 10%;
+  }
+  #Pianos h2 {
+    font-size: 2em;
+  }
+  #pianos p {
+    font-size: 1em;
+  }
+  #card-container {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px 0;
+  }
+  .cards {
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 75vw;
+  height: 75vw;
+  }
+  .card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  line-height: 75vw;
+  }
+  #Contact h2 {
+  font-size: 1.5rem;
+  padding: 5px 0;
+  margin: 5px 0 5px 0;
+  }
+
+  #Contact p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  }
+  #Email {
+    width: 75vw;
+    margin: 0;
+    font-size: 1rem;
+  }
+  #submit {
+  
+  width: 30vw;
+  margin: 0 35vw 0 35vw;
+  font-size: 0.8em;
+  }
+}
