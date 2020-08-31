@@ -301,7 +301,7 @@ a {
   }
 }
 
-@media screen and (max-device-width: 1200px) {
+@media only screen and (max-device-width: 1200px) {
   #header-img {
     height: 50%;
     width: 50%;
@@ -318,7 +318,7 @@ a {
     padding: 15px 6vw;
   }
   .parallax {
-    background-attachment: ;
+    background-attachment: fixed;
     height: 100vh;
   }
 
@@ -336,8 +336,9 @@ a {
     font-size: 1em;
   }
   .parallax2 {
+    background-attachment: scroll;
     height: 50vh;
-    background-size: auto;
+    background-size: cover;
   }
   #Pianos {
     margin: 0 10% 5% 10%;
@@ -356,8 +357,7 @@ a {
   grid-gap: 10px 0;
   }
   .cards {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: auto;
   width: 75vw;
   height: 75vw;
   }
