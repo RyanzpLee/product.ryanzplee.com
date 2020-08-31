@@ -110,12 +110,13 @@ a {
 
 #video {
   width: 100%;
+  border: none;
 }
 
 
 .parallax2 {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)
-  ), url("https://assets.classicfm.com/2015/32/steinway-piano-factory-3-1439367685-view-0.jpg");
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),
+  url("https://assets.classicfm.com/2015/32/steinway-piano-factory-3-1439367685-view-0.jpg");
   height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -183,7 +184,7 @@ a {
   color: white;
   line-height: 400px; 
 }
-.card-front span {
+.card-front div {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
@@ -194,7 +195,7 @@ a {
   transform: rotateY(180deg);
   line-height: 400px;
 }
-.card-back span {
+.card-back div {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
