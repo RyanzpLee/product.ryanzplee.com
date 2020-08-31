@@ -336,7 +336,7 @@ a {
     font-size: 1em;
   }
   .parallax2 {
-    background-attachment: scroll;
+    background-attachment: fixed;
     height: 50vh;
     background-size: cover;
   }
