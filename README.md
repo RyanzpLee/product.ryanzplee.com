@@ -8,7 +8,7 @@ I have tried to implement animated cards that would lead to other product pages 
 
 A challenge that I am continuously improving on is ensuring that the websites I create are responsive to any screen size on mobile or desktop.
 
-[You can view the website here](product.ryanzplee.com)
+[You can view the website here](https://product.ryanzplee.com)
 
 
 ## User Stories
